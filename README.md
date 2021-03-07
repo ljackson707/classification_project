@@ -28,7 +28,7 @@ Example Problems:
 
     - Are the variables FiberOptic and high Monthly charges a significant factor to churn?
 
-    - Are the bariables having online security and paperless billing causing churn?
+    - Are the variables having online security and paperless billing causing churn?
 
     -  For Males who stream movies, is there a diffrence in age for those who churn?
 
