@@ -19,11 +19,11 @@ from sklearn.impute import SimpleImputer
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # For Telco data
 
-def prep_telco_data(telco_df):
-    telco_df = telco_df\
-        .pipe(handle_missing_values)\
-        .pipe(remove_columns)
-    return (telco_df)
+def prep_telco_data(df):
+    df = df
+    dummy_df = pd.get_dummies(df[["InternetService"]], drop_first=True)
+    df = pd.concat([df, dummy_df], axis=1)
+    return (df)
 
 def handle_missing_values(df):
     return df.assign(
