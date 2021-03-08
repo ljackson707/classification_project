@@ -11,6 +11,6 @@ import os
 
 def acquire_telco_data(df):
     df = "Cust_Churn_Telco.csv"
-    df = pd.read_csv("Cust_Churn_Telco.csv")
+    df = pd.read_csv(df)
     df = pd.DataFrame(df)
     return df
