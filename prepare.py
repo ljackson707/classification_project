@@ -57,7 +57,7 @@ def rename_columns(df):
 
 def remove_columns(df):
     return df.drop(columns=['internet_service', 'gender', 'payment_method', 'contract',"partner", "dependents", "phone_service", "multiple_lines",
-                            "online_security",'online_backup', 'device_protection','Churn','tech_support','streaming_movies','streaming_tv','paperless_billing'])
+                            "online_security",'online_backup', 'device_protection','Churn','tech_support','streaming_movies','streaming_tv','paperless_billing','monthly_charges', 'total_charges'])
 
 def train_validate_test_split(df, target, seed=123):
     '''
@@ -75,3 +75,15 @@ def train_validate_test_split(df, target, seed=123):
                                        random_state=seed,
                                        stratify=train_validate[target])
     return train, validate, test
+
+    
+def data_target_split(data_set):
+    '''
+    Accepts a DataFrame set to train a ML model
+    Returns X_train/validation/test set, with y_train/validate/test 
+    '''
+    
+    data = data_set.drop(columns='Churn_Yes')
+    target = data_set[['Churn_Yes']]
+
+    return data, target
