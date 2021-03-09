@@ -103,10 +103,10 @@ HA: There is a significant diffrence in churn dependening on if the customer has
 
 # Data Dictionary
 
-Knn = 
+Knn = K-nearest neibors test 
 
-LogReg = 
+LogReg = Linear regression test
 
-Rforerst = 
+Rforerst = Random forest test
 
-Forest = 
+Forest = Decsision tree test 
