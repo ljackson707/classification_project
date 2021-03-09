@@ -36,7 +36,7 @@ plan
 
 # What are we looking for? 
 
-Problems: (Pick 2 or more)
+Problem 1:
 
 - Is churn dependent on internet service? 
 
@@ -44,13 +44,22 @@ HO: There is no diffrence in churn between customers with diffrent internet serv
 
 HA: There is a significant diffrence in churn beteen the internet services. 
 
+Problem 2:
 
-Acquire
+- Are customers with fiber optic and no online security more likly to churn?
+
+HO: There is no diffrence in churn dependent on if the customer has online security and fiber optic.
+
+HA: There is a significant diffrence in churn dependening on if the customer has online secur citizen and has fiber optic.
+
+
+# Acquire
+
 - create a fucntion that will acquire telco.csv
 - take a look at its values (info, describe, and head)
 - plot some histograms showing the distributions of         variables of intrest
 
-Prepare
+# Prepare
 - create acquire.py, prepare.py, and explore.py
 - split data (train/validate/test)
 - handle missing values in any
@@ -60,13 +69,13 @@ Prepare
     - create new feature for tenure in years
     - create single var. (dependents and partner = family)
 
-Explore
+# Explore
 - run at least 2 statistical tests (2 hypothesis)
 - document findings
 - create visualizations (discover variable relationships)
 - identify features that relate to churn(target)
 
-Model & Evaluate 
+# Model & Evaluate 
 - You are required to establish a baseline accuracy to determine if having a model is better than no model and train and compare at least 3 different models.
 
 - Train (fit, transform, evaluate) multiple models, varying the algorithm and/or hyperparameters you use.
@@ -79,7 +88,7 @@ Model & Evaluate
 
 - Test the final model on your out-of-sample data (the testing dataset), summarize the performance, interpret and document your results.
 
-Delviver
+# Delviver
 - Introduce yourself and your project goals at the very beginning of your notebook walkthrough.
 
 - Summarize your findings at the beginning like you would for an Executive Summary. Just because you don't have a slide deck for this presentation, doesn't mean you throw out everything you learned from Storytelling.
@@ -92,28 +101,12 @@ Delviver
 
 - Remember you have a time limit of 5 minutes for your presentation. Make sure you practice your notebook walkthrough keeping this time limit in mind; it will go by very quickly.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Data Dictionary
+
+Knn = 
+
+LogReg = 
+
+Rforerst = 
+
+Forest = 
